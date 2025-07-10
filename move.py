@@ -1,9 +1,10 @@
 from elma import Level
 
 # Load the existing level
-input_filename = R"C:\Programs\EOL\lev\qwquu018.lev"
+input_filename = R"C:\Programs\EOL\lev\unstable.lev"
 output_filename = R"C:\Programs\EOL\lev\test.lev"
-offset=100000000000000
+# 100000000376832 is a floating point number (so recs don't crash). You can add a small offset to centralize the rec position
+offset=100000000376832-27.3
 
 level = Level.load(input_filename)
 
